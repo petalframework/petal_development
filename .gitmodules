@@ -1,0 +1,3 @@
+[submodule "apps/theex"]
+	path = apps/theex
+	url = https://github.com/petalframework/theex
