@@ -1,3 +1,0 @@
-# See robots_plug.ex
-# Robots are disallowed by default (we don't want them crawling staging sites)
-# On your production server, set an environment variable ALLOW_ROBOTS=true to turn them on

@@ -1,7 +1,0 @@
-<!DOCTYPE html>
-<html lang="en" class="h-full bg-white lg:bg-gray-50">
-  <%= render AppWeb.LayoutView, "_head.html", assigns %>
-  <body class="h-full font-sans antialiased text-gray-600 bg-gray-100 dark:bg-gray-900">
-    <%= @inner_content %>
-  </body>
-</html>

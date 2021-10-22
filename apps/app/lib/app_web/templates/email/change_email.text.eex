@@ -1,5 +1,0 @@
-Hey there,
-
-You can update your e-mail by visiting the url below:
-
-<%= @url %>
