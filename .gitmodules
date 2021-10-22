@@ -1,0 +1,6 @@
+[submodule "apps/petal_pro"]
+	path = apps/petal_pro
+	url = https://github.com/petalframework/petal_pro
+[submodule "apps/petal"]
+	path = apps/petal
+	url = https://github.com/petalframework/petal
