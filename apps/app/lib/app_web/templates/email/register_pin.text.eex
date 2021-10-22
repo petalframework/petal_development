@@ -1,0 +1,3 @@
+Below is your validation code:
+
+<%= @pin %>

@@ -1,0 +1,8 @@
+<% live_render @conn, AppWeb.Components.NavWrapperLive, [session: %{"active_page" => nil}] %>
+
+<%= @inner_content %>
+
+<%= render AppWeb.LayoutView, "_notification.html", content: get_flash(@conn, :success), type: "success" %>
+<%= render AppWeb.LayoutView, "_notification.html", content: get_flash(@conn, :info), type: "info" %>
+<%= render AppWeb.LayoutView, "_notification.html", content: get_flash(@conn, :warning), type: "warning" %>
+<%= render AppWeb.LayoutView, "_notification.html", content: get_flash(@conn, :error), type: "error" %>

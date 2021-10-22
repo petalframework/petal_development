@@ -1,0 +1,11 @@
+Let’s get you logged in.
+
+We use this easy sign in code so you don’t have to remember or type in yet another long password.
+
+Your sign is_integer() code is: <%= @pin %>
+
+Please note this code is only valid for 15 minutes.
+
+Have questions or trouble logging in?
+
+Just reply to this email or contact <%= System.get_env("SUPPORT_EMAIL") %>

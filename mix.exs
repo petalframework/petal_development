@@ -1,4 +1,4 @@
-defmodule TheexUmbrella.MixProject do
+defmodule PetalUmbrella.MixProject do
   use Mix.Project
 
   def project do

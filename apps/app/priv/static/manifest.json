@@ -1,0 +1,12 @@
+{
+  "name": "Petal",
+  "short_name": "Petal",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/images/logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

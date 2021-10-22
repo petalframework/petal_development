@@ -1,0 +1,8 @@
+<div>
+  <%= render AppWeb.LayoutView, "_notification.html", content: live_flash(@flash, :success), type: "success" %>
+  <%= render AppWeb.LayoutView, "_notification.html", content: live_flash(@flash, :info), type: "info" %>
+  <%= render AppWeb.LayoutView, "_notification.html", content: live_flash(@flash, :warning), type: "warning" %>
+  <%= render AppWeb.LayoutView, "_notification.html", content: live_flash(@flash, :error), type: "error" %>
+</div>
+
+<%= @inner_content %>

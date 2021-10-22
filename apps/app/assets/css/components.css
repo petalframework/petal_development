@@ -1,0 +1,23 @@
+.h1 {
+  @apply text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl;
+}
+
+.h2 {
+  @apply text-2xl font-bold leading-7 sm:text-3xl sm:truncate;
+}
+
+.h3 {
+  @apply text-lg font-medium leading-6;
+}
+
+.h4 {
+  @apply text-xs font-bold leading-tight text-gray-700 uppercase dark:text-gray-300;
+}
+
+.subtitle {
+  @apply text-sm font-medium text-gray-500;
+}
+
+.error-text {
+  @apply mt-1 text-xs italic text-red-500;
+}

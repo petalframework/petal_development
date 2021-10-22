@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "watch-js": "node esbuild.js --watch",
+    "build-js": "node esbuild.js",
+    "deploy-js": "node esbuild.js --deploy",
+    "watch-css": "tailwindcss --input=css/app.css --output=../priv/static/assets/app.css --postcss --watch",
+    "build-css": "tailwindcss --postcss -i css/app.css -o ../priv/static/assets/app.css",
+    "deploy-css": "tailwindcss --postcss --minify -i css/app.css -o ../priv/static/assets/app.css",
+    "start": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
+    "deploy": "NODE_ENV=production concurrently \"npm:deploy-css\" \"npm:deploy-js\"",
+    "test": ""
+  },
+  "dependencies": {
+    "alpinejs": "^3.2.2",
+    "flatpickr": "^4.6.9",
+    "gsap": "^3.6.1",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view",
+    "slim-select": "^1.26.1",
+    "tippy.js": "^6.2.7",
+    "topbar": "^1.0.1",
+    "truncate": "^2.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.1",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.6",
+    "concurrently": "^6.3.0",
+    "esbuild": "^0.13.4",
+    "postcss": "^8.3.5",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.x"
+  }
+}

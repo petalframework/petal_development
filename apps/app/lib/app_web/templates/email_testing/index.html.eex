@@ -1,0 +1,63 @@
+
+<div class="flex h-screen overflow-hidden bg-gray-100">
+  <div class="hidden md:flex md:flex-shrink-0">
+    <div class="flex flex-col w-64">
+      <div class="flex flex-col flex-1 h-0 bg-white border-r border-gray-200">
+        <div class="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
+          <nav class="flex-1 px-2 mt-5 space-y-1 bg-white">
+            <%= for option <- @email_options do %>
+              <a
+                href="<%= Routes.email_testing_path(@conn, :preview, option) %>"
+                class="<%= if @email_name == option, do: "bg-gray-100 text-gray-900", else: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %> flex items-center px-2 py-2 text-sm font-medium rounded-md group">
+                <%= option %>
+              </a>
+            <% end %>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col flex-1 w-0 overflow-hidden">
+    <main class="relative z-0 flex-1 overflow-y-auto focus:outline-none">
+      <div class="py-6">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+          <h1 class="text-2xl font-semibold text-gray-900"><%= @email_name %></h1>
+        </div>
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+          <div class="flex justify-between">
+            <div class="text-sm">
+              <div>
+                From <strong><%= @email.from |> elem(0) %>, <%= @email.from |> elem(1) %></strong>
+              </div>
+              <div>
+                Subject: <strong><%= @email.subject %></strong>
+              </div>
+              <div>
+                Preview text: <%= @email.assigns[:preview_text] %>
+              </div>
+            </div>
+
+            <%= form_for :test_email, Routes.email_testing_path(@conn, :send_test_email, @email_name), fn _f -> %>
+              <div class="text-right">
+                <label class="<%= label_css() %> mb-1">Send a test email to self (<%= @current_user.email %>)</label>
+                <div class="mb-2 text-xs text-gray-500">Ensure AWS_ACCESS_KEY_ID && AWS_SECRET_ACCESS_KEY is set in .envrc</div>
+                <%= submit "Send", class: button_css(size: "sm") %>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="mt-10">
+            <h3 class="<%= heading_css("h2") %> mt-5 mb-3">Desktop view</h3>
+            <iframe style="width: 100%; height: 800px; border: 2px solid #bfbfbf;" src="<%= @iframe_url %>"></iframe>
+          </div>
+          <div class="mt-10">
+            <h3 class="<%= heading_css("h2") %> mt-10 mb-3">Mobile view</h3>
+            <iframe style="width: 360px; height: 400px; border: 2px solid #bfbfbf;" src="<%= @iframe_url %>"></iframe>
+          </div>
+          <h3 class="<%= heading_css("h2") %> mt-10 mb-3">Plain text</h3>
+          <div class="p-5 whitespace-pre-line bg-white"><%= @email.text_body %></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

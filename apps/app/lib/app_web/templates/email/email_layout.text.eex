@@ -1,0 +1,4 @@
+<%= @inner_content %>
+
+Sent by Petal
+https://petal.build

@@ -1,0 +1,8 @@
+Let's verify your email.
+
+We got a request to add this email address to your Travel Massive account.
+
+Follow the link below to go ahead:
+
+<%= @url %>
+
