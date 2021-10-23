@@ -1,4 +1,4 @@
-defmodule PetalUmbrella.MixProject do
+defmodule PetalDevelopment.MixProject do
   use Mix.Project
 
   def project do
@@ -6,7 +6,8 @@ defmodule PetalUmbrella.MixProject do
       apps_path: "apps",
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -17,5 +18,11 @@ defmodule PetalUmbrella.MixProject do
   # Run "mix help deps" for examples and options.
   defp deps do
     []
+  end
+
+  defp aliases do
+    [
+      setup: "cmd --app petal_pro mix setup"
+    ]
   end
 end

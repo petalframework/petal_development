@@ -17,24 +17,23 @@ Pull down the git submodules.
 git submodule update --init
 ```
 
-Update apps/app/dev.exs with the right database name.
-```elixir
-# Configure your database
-# Set log: true to see database queries in your logs
-config :app, App.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "petal_development_dev",
-  hostname: "localhost",
-  show_sensitive_data_on_connection_error: true,
-  pool_size: 10,
-  log: false
-```
-
-Setup the project:
+Copy .envrc into your root folder and update the database variables.
 
 ```bash
-cd apps/app
+cp apps/petal_pro/.envrc.example .envrc
+```
+
+Your .envrc should have at least these variables:
+
+```bash
+export DATABASE_USERNAME="postgres"
+export DATABASE_PASSWORD="postgres"
+export DATABASE_NAME="petal_development_dev"
+```
+
+Setup the project (create database, migrate, seed, fetch npm modules):
+
+```bash
 mix setup
 ```
 
