@@ -13,6 +13,7 @@ petal_development
 
 ```bash
 sh setup.sh
+mix phx.server
 ```
 ## Developing
 
