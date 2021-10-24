@@ -11,24 +11,9 @@ petal_development
 
 ## Install
 
-Pull down the git submodules if they haven't been pulled.
-
-```bash
-git submodule update --init
-```
-
-We need to make some tweaks to both `petal` and `petal_boilerplate` to get them working in an umbrella environment (don't commit these changes to git).
-
 ```bash
 sh setup.sh
 ```
-
-Setup the project (create database, migrate, seed, fetch npm modules):
-
-```bash
-mix setup
-```
-
 ## Developing
 
 ```
