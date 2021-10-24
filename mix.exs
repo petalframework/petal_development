@@ -7,7 +7,7 @@ defmodule PetalDevelopment.MixProject do
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      aliases: aliases()
+      aliases: aliases(),
     ]
   end
 
@@ -22,7 +22,7 @@ defmodule PetalDevelopment.MixProject do
 
   defp aliases do
     [
-      setup: "cmd --app petal_pro mix setup"
+      setup: "cmd --app petal_boilerplate mix setup"
     ]
   end
 end

@@ -9,4 +9,4 @@
 # move said applications out of the umbrella.
 import Config
 
-import_config "../apps/petal_pro/config/config.exs"
+import_config "../apps/petal_boilerplate/config/config.exs"
