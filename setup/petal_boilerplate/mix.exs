@@ -53,7 +53,7 @@ defmodule PetalBoilerplate.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:petal, in_umbrella: true}
+      {:petal_components, in_umbrella: true}
     ]
   end
 

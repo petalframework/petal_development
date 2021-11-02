@@ -1,11 +1,11 @@
 # Petal Development
 
-Umbrella app to help develop both petal and petal_boilerplate.
+Umbrella app to help develop both petal_components and petal_boilerplate.
 
 ```
 petal_development
 ├── apps
-│   ├── petal <- git submodule
+│   ├── petal_components <- git submodule
 │   └── petal_boilerplate <- git submodule
 ```
 
@@ -20,16 +20,16 @@ mix phx.server
 ```
 petal_development
 ├── apps
-│   ├── petal <- set to a specific commit
+│   ├── petal_components <- set to a specific commit
 │   └── petal_boilerplate <- set to a specific commit
 ```
 
 Since each git submodule points to a commit hash, we need to update this project after we have finished editing one of the submodules.
 
-Develop either project (petal or petal)_pro) and run the normal git commands within the folder. For example:
+Develop either project (petal_components or petal_boilerplate) and run the normal git commands within the folder. For example:
 
 ```
-cd apps/petal
+cd apps/petal_components
 touch newfile.ex
 git add newfile.ex
 git commit -m 'added a new file'

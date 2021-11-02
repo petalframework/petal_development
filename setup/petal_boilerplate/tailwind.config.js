@@ -2,7 +2,11 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
-  purge: ["../lib/*_web/**/*.*ex", "./js/**/*.js", "../../petal/**/*.*ex"],
+  purge: [
+    "../lib/*_web/**/*.*ex",
+    "./js/**/*.js",
+    "../../petal_components/**/*.*ex",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -11,9 +15,6 @@ module.exports = {
         secondary: colors.pink,
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require("@tailwindcss/forms")],
 };

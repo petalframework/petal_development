@@ -1,5 +1,5 @@
 [submodule "apps/petal"]
-	path = apps/petal
+	path = apps/petal_components
 	url = https://github.com/petalframework/petal
 [submodule "apps/petal_boilerplate"]
 	path = apps/petal_boilerplate
