@@ -1,6 +1,11 @@
-# Petal Development
+<p align="center">
+  <img src="https://res.cloudinary.com/wickedsites/image/upload/v1635752721/petal/logo_rh2ras.png" height="128">
+  <h1 align="center">Petal Development</h1>
+</p>
 
-Umbrella app to help develop both petal_components and petal_boilerplate.
+An elixir umbrella app to help developers contribute to either [petal_components](https://github.com/petalframework/petal) or [petal_boilerplate](https://github.com/petalframework/petal_boilerplate).
+
+Be up and running within a minute.
 
 ```
 petal_development
@@ -17,30 +22,8 @@ mix phx.server
 ```
 ## Developing
 
-```
-petal_development
-├── apps
-│   ├── petal_components <- set to a specific commit
-│   └── petal_boilerplate <- set to a specific commit
-```
+1. Make your changes
+2. Commit to that submodule
+3. Submit a PR
+4. If accepted, we will update this petal_development project to point to the latest submodule commits
 
-Since each git submodule points to a commit hash, we need to update this project after we have finished editing one of the submodules.
-
-Develop either project (petal_components or petal_boilerplate) and run the normal git commands within the folder. For example:
-
-```
-cd apps/petal_components
-touch newfile.ex
-git add newfile.ex
-git commit -m 'added a new file'
-git push origin main
-```
-
-Petal has been updated successfully. However, now the submodule in petal_development is pointing to an old commit. We need to update this pointer:
-
-```
-# In the petal_development root folder:
-git add .
-git commit -m 'Petal submodule updated'
-git push origin main
-```
