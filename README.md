@@ -3,7 +3,7 @@
   <h1 align="center">Petal Development</h1>
 </p>
 
-An elixir umbrella app to help developers contribute to either [petal_components](https://github.com/petalframework/petal) or [petal_boilerplate](https://github.com/petalframework/petal_boilerplate).
+An elixir umbrella app to help developers contribute to either [petal_components](https://github.com/petalframework/petal_components) or [petal_boilerplate](https://github.com/petalframework/petal_boilerplate).
 
 Be up and running within a minute.
 

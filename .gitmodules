@@ -1,6 +1,6 @@
 [submodule "apps/petal"]
 	path = apps/petal_components
-	url = https://github.com/petalframework/petal
+	url = https://github.com/petalframework/petal_components
 	update = rebase
 	branch = main
 [submodule "apps/petal_boilerplate"]
