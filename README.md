@@ -20,6 +20,8 @@ petal_development
 sh setup.sh
 mix phx.server
 ```
+
+Note that on first run of the server there is a bug where an "assets" folder appears in the root directory - you can delete this and things should resolve themselves if you refresh the page.
 ## Developing
 
 1. Make your changes
