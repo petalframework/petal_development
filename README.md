@@ -18,6 +18,8 @@ petal_development
 
 ```bash
 sh setup.sh
+cd apps/petal_components && git checkout main && cd ../..
+cd apps/petal_boilerplate && git checkout main && cd ../..
 mix phx.server
 ```
 ## Developing
