@@ -13,5 +13,9 @@ cp ./setup/petal_boilerplate/dev.exs ./apps/petal_boilerplate/config
 cp ./setup/petal_boilerplate/mix.exs ./apps/petal_boilerplate
 cp ./setup/petal_boilerplate/tailwind.config.js ./apps/petal_boilerplate/assets
 
-echo "Setup database"
-mix setup
+echo "Mix setup on boilerplate"
+cd apps/petal_boilerplate && mix setup && cd ../..
+
+echo "Fetch Tailwind and Esbuild CLI"
+cd apps/petal_boilerplate && mix tailwind.install && cd ../..
+cd apps/petal_boilerplate && mix esbuild.install && cd ../..

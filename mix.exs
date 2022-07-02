@@ -7,7 +7,7 @@ defmodule PetalDevelopment.MixProject do
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      aliases: aliases(),
+      aliases: aliases()
     ]
   end
 
@@ -17,7 +17,10 @@ defmodule PetalDevelopment.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    []
+    [
+      #      {:phoenix_live_view, git: "https://github.com/phoenixframework/phoenix_live_view", override: true},
+      {:phoenix_live_view, "0.17.10", override: true}
+    ]
   end
 
   defp aliases do
