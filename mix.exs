@@ -18,8 +18,7 @@ defmodule PetalDevelopment.MixProject do
   # Run "mix help deps" for examples and options.
   defp deps do
     [
-      #      {:phoenix_live_view, git: "https://github.com/phoenixframework/phoenix_live_view", override: true},
-      # {:phoenix_live_view, "0.17.11", override: true}
+      {:phoenix, "~> 1.7.0-rc.0", override: true},
     ]
   end
 
