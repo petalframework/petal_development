@@ -12,6 +12,7 @@ cp ./setup/petal_boilerplate/config.exs ./apps/petal_boilerplate/config
 cp ./setup/petal_boilerplate/dev.exs ./apps/petal_boilerplate/config
 cp ./setup/petal_boilerplate/mix.exs ./apps/petal_boilerplate
 cp ./setup/petal_boilerplate/tailwind.config.js ./apps/petal_boilerplate/assets
+cp ./setup/petal_boilerplate/app.css ./apps/petal_boilerplate/assets/css
 
 echo "Mix setup on boilerplate"
 cd apps/petal_boilerplate && mix setup && cd ../..

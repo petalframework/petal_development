@@ -17,9 +17,7 @@ defmodule PetalDevelopment.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    [
-      {:phoenix, "~> 1.7.0-rc.0", override: true}
-    ]
+    []
   end
 
   defp aliases do
