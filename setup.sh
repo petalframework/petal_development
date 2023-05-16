@@ -18,5 +18,10 @@ echo "Mix setup on boilerplate"
 cd apps/petal_boilerplate && mix setup && cd ../..
 
 echo "Fetch Tailwind and Esbuild CLI"
-cd apps/petal_boilerplate && mix tailwind.install && cd ../..
-cd apps/petal_boilerplate && mix esbuild.install && cd ../..
+cd apps/petal_boilerplate
+mix deps.get
+mix tailwind.install
+mix esbuild.install
+cd ../..
+
+mix deps.get
