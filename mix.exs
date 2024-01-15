@@ -19,7 +19,7 @@ defmodule PetalDevelopment.MixProject do
   defp deps do
     [
       {:phoenix_live_view, "~> 0.20", override: true},
-      {:ecto, "~> 3.10.3", override: true},
+      {:ecto, "~> 3.10.3", override: true}
     ]
   end
 
