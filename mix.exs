@@ -18,7 +18,7 @@ defmodule PetalDevelopment.MixProject do
   # Run "mix help deps" for examples and options.
   defp deps do
     [
-      {:phoenix_live_view, "~> 0.20", override: true}
+      {:phoenix_live_view, "~> 1.0", override: true}
     ]
   end
 
